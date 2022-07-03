@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_cookie_set_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Cookie Through API"
+        app:layout_constraintBottom_toTopOf="@id/btn_cookie_set_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cookie_set_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Cookie Through App"
+        app:layout_constraintBottom_toTopOf="@id/btn_cookie_set_webview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cookie_set_api" />
+
+    <Button
+        android:id="@+id/btn_cookie_set_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Cookie Through Webview"
+        app:layout_constraintBottom_toTopOf="@id/btn_webview_open"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cookie_set_app" />
+
+    <Button
+        android:id="@+id/btn_webview_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open WebView"
+        app:layout_constraintBottom_toTopOf="@id/btn_chrome_tab_open"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cookie_set_webview" />
+
+    <Button
+        android:id="@+id/btn_chrome_tab_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Chrome Tab"
+        app:layout_constraintBottom_toTopOf="@id/btn_cookies_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_webview_open" />
+
+    <Button
+        android:id="@+id/btn_cookies_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Cookies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_chrome_tab_open" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
